@@ -1,0 +1,453 @@
+<DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atualizar a imagem</title>
+        <!--<link rel="stylesheet" href="style.css" />-->
+        <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<!--<style type="text/css">
+   #page{
+       size: ;
+   } 
+</style>-->
+
+
+<body>
+    
+    
+
+  <!-- <center><h1>Ficha de personagem</h1></center>
+
+    <form class="upload-imagem" name="imagemDoPersonagem">
+        <input type="file" name="img" accept="image/*"class="upload">
+        <button>Alterar Imagem</button>
+    </form>
+      
+      <style type="text/css">
+            .imagem{
+                
+            }
+      </style>
+    <div>
+        <img class="imagem" name="nameImg" src="" alt="imagem do personagem" width="100px" height="100px" border="2px solid black">
+    </div>-->
+
+
+<!--<script>-->
+
+<!--</script>-->
+
+
+<br>
+
+<!--<center> <h1> Ficha de personagem</h1></center>-->
+<br>
+<style type="text/css">
+    #pontos{
+        width: 500px;
+        height:30px;
+        font-size: 30px;
+       /* border: solid 2px  white;*/
+        background-color: #00ECFF;
+        border-radius: 10px 10px 10px 10px;
+        /*margin: 10px ;*/
+        padding:5px;
+        
+    
+    }
+</style>
+<!--<div id="pontos">
+    <script>
+        var pontos = 5;
+        
+        
+        
+      
+        
+       //document.write("pontos de personagem: "+pontos);
+       
+    </script>
+</div>
+<br>
+<br>-->
+<center><h1> <b>Ficha de personagem</b></h1></center>
+<form name="ficha">
+
+    Nome:
+    <input type="text" name="nome" size="50"></input>
+    <br>
+    Pvs:
+    <input type="number" name="pvs" size="2"></input>
+    <br>
+    Pms:
+    <input type="number" name="pms" size="2"></input>
+    <br>
+    <br>
+   <b> Atributos__________________________________________________________</b>
+    <br>
+    <br>
+    Força:
+<input  type="number" name="forca" size="1" maxlength="1">
+</input>
+
+    <br>
+    <br>
+    Habilidade:
+<input  type="number" name="habilidade" size="1" maxlength="1">
+</input>
+
+    <br>
+    <br>
+     Resistência:
+<input  type="number" name="resistencia" size="1" maxlength="1">
+</input>
+
+    <br>
+    <br>
+    Armadura:
+<input  type="number" name="armadura" size="1" maxlength="1">
+</input>
+    <br>
+    <br>
+    Poder de Fogo:
+    <input  type="number" name="pdf" size="1" maxlength="1">
+</input>
+
+    <br>
+    <br>
+    
+<style type="text/css">
+    #txaVantagens{
+        background-color: white;
+        color: black;
+    }
+    
+</style>
+<div id="txaVantagens">
+<b>Vantagens:</b>
+<br>
+<textarea cols="30" rows="30" name="vantagens">
+ 
+</textarea>
+</div>
+    <br>
+    <br>
+    <style type="text/css">
+    #txaDesVantagens{
+        background-color: white;
+        color: black;
+    }
+    
+</style>
+<div id="txaDesVantagens">
+<b>Desvantagens:</b>
+<br>
+<textarea cols="30" rows="30" name="desvantagens">
+ 
+</textarea>
+</div>
+    <br>
+    <br>
+    <style type="text/css">
+    #txaPericias{
+        background-color: white;
+        color: black;
+    }
+    
+</style>
+<div id="txaPericias">
+<b>Pericias:</b>
+<br>
+<textarea cols="30" rows="30" name="pericias">
+ 
+</textarea>
+</div>
+    <br>
+    <br>
+    <style type="text/css">
+    #txaTipoDedano{
+        background-color: white;
+        color: black;
+        position: absolute;
+        left: 300px;
+        top: 505px;
+        
+    }
+    
+</style>
+<div id="txaTipoDedano">
+<b>Tipo de dano:</b>
+<br>
+<textarea cols="30" rows="30" name="TipoDedano">
+    
+    
+ Força:
+ 
+ 
+ 
+ 
+ 
+ Poder de Fogo:
+ 
+ 
+ 
+ 
+ 
+ 
+ Outros:
+</textarea>
+</div>
+    <br>
+    <br>
+    
+<style type="text/css">
+    #caminhosDaMagia{
+        position: absolute;
+        left: 300px;
+        top: 1025px;
+    }
+</style>
+<div id="caminhosDaMagia">
+<b>Caminhos da Magia</b>
+<br>
+Água
+<input type="number" size="2"name="agua">
+</input>
+<br>
+Ar
+<input type="number" size="2" name="ar">
+</input>
+<br>
+Fogo
+<input type="number" size="2" name="fogo">
+</input>
+<br>
+Luz
+<input type="number" size="2" name="luz">
+</input>
+<br>
+Terra
+<input type="number" size="2" name="terra">
+</input>
+<br>
+Trevas
+<input type="number" size="2" name="trevas">
+</input>
+<br>
+</div>
+<br>
+<br>
+<style  type="text/css">
+    #equipamento{
+        position: absolute;
+        left: 300px;
+        top: 1225px;
+    }
+</style>
+<div id="equipamento">
+<b>Equipamento dinheiro e itens</b>
+<br>
+<textarea cols="30" rows="30" name="equipamento">
+    
+</textarea>
+</div>
+<style type="text/css">
+    #experiencia{
+        position: absolute;
+        left: 300px;
+        top: 1725px;
+    }
+</style>
+<div id="experiencia">
+<b>Pontos de Experiência</b>
+<br>
+<input type="number" placeholder="0" name="experiencia">
+</input>
+</div>
+
+
+ <script>
+     //IIFE Immediately Invoked Function Expression
+   // ;(function(){
+
+        //Pega os elementos da tela e declara como constantes
+       // const leitorDeArquivos = new FileReader(),
+             // formulario = document.querySelector('.upload-imagem'),
+            //  previaDaImagem = document.querySelector('.imagem'),
+             // inputArquivo = document.querySelector('.upload');
+
+        //Quando o formulário for enviado:
+       // formulario.addEventListener('submit', function(submit){
+            //empede o recarregamento da página
+          //  submit.preventDefault();
+
+            //pega o arquivo enviado e guarda nesta variavel
+          //  let imagemEnviada = inputArquivo.files[0];
+
+            //Usa a função do objeto leitor de arquivos, que lê o arquivo, e consegue reaproveita-lo para usar o arquivo como uma URL
+          //  leitorDeArquivos.readAsDataURL(imagemEnviada);
+
+            //Após leitura da imagem (evento load), a função de callback define o valor do src da imagem de prévia com o valor do resultado da leitura do leitor de arquivos
+          //  leitorDeArquivos.addEventListener('loadend', function(load){
+
+                //veja no console o que o resultado do leitor de arquivos :)
+             //   console.log(load.target.result);
+
+             //   previaDaImagem.src = load.target.result
+                
+    //  var imagemSelecionada = previaDaImagem.src;
+      
+       /* $("button").click(
+            function(){
+        $(".clérigo-parent").css("background-image",imagemEnviada);
+        $(".clérigo-origin ").css("background-image",imagemEnviada);
+        $(".clérigo-draggable").css("background-image",imagemEnviada);
+            }
+        );*/
+        //    })
+
+    //    })
+
+//    })()
+
+function criarFicha(){
+  var imagemDoPersonagem;
+  //imagemDoPersonagem =document.forms["imagemDoPersonagem"];
+  var ficha;
+  ficha = document.forms["ficha"];
+ // CRIA UM OBJETO WINDOW
+ var win = window.open('', '', 'height=700px,width=700px');
+
+win.document.write("<b>Ficha de personagem</b>");
+win.document.write("<br>");
+win.document.write("<br>");
+
+/*querySelector("img.imagem");
+
+win.document.write(imagemDoPersonagem.innerHTML);*/
+
+     
+
+ 
+ win.document.write("<br>");
+ win.document.write("Nome: "+ficha.elements["nome"].value);
+ win.document.write("<br>");
+ win.document.write("Pvs: "+ficha.elements["pvs"].value);
+ win.document.write("<br>");
+ win.document.write("Pms: "+ficha.elements["pms"].value);
+ win.document.write("<br>");
+ win.document.write("<br>");
+ win.document.write("Atributos_________________________________________________________________");
+ win.document.write("<br>");
+ win.document.write("<br>");
+ 
+ 
+ win.document.write("Força: "+ficha.elements["forca"].value);
+ win.document.write("<br>");
+ win.document.write("Habilidade: "+ficha.elements["habilidade"].value);
+ win.document.write("<br>");
+ win.document.write("Resistência: "+ficha.elements["resistencia"].value);
+ win.document.write("<br>");
+ win.document.write("Armadura: "+ficha.elements["armadura"].value);
+ win.document.write("<br>");
+ win.document.write("Poder de Fogo: "+ficha.elements["pdf"].value);
+ win.document.write("<br>");
+ win.document.write("<br>");
+ win.document.write("<b>Vantagens: </b>"+ficha.elements["vantagens"].value);
+ win.document.write("<br>");
+ win.document.write("<br>");
+ win.document.write("<b>Desvantagens:</b> "+ficha.elements["desvantagens"].value);
+ win.document.write("<br>");
+ win.document.write("<br>");
+ win.document.write("<b>Pericias: </b>"+ficha.elements["pericias"].value);
+ win.document.write("<br>");
+ win.document.write("<br>");
+ win.document.write("<b>Tipo de dano: </b>"+ficha.elements["TipoDedano"].value);
+ win.document.write("<br>");
+ win.document.write("<br>");
+ win.document.write("<b>Caminhos da magia: </b>");
+ win.document.write("<br>");
+ win.document.write("Água: "+ficha.elements["agua"].value);
+ win.document.write("<br>");
+ win.document.write("Ar: "+ficha.elements["ar"].value);
+ win.document.write("<br>");
+ win.document.write("Fogo: "+ficha.elements["fogo"].value);
+ win.document.write("<br>");
+ win.document.write("Luz: "+ficha.elements["luz"].value);
+ win.document.write("<br>");
+ win.document.write("Terra: "+ficha.elements["terra"].value);
+ win.document.write("<br>");
+ win.document.write("Trevas: "+ficha.elements["trevas"].value);
+ win.document.write("<br>");
+ win.document.write("<br>");
+ win.document.write("<b>Equipamento dinheiro e itens: </b>"+ficha.elements["equipamento"].value);
+ win.document.write("<br>");
+ win.document.write("<br>");
+ win.document.write("<b>Pontos de Experiência: </b>"+ficha.elements["experiencia"].value);
+ win.document.write("<br>");
+ 
+ win.document.write("<br>");
+ win.document.write("<br>");
+ //win.document.close();
+ win.print();
+ 
+ 
+ 
+ 
+
+
+}
+
+
+
+</script>
+
+<br>
+<style type="text/css">
+    #pontos{
+        width: 500px;
+        height:30px;
+        font-size: 30px;
+       /* border: solid 2px  white;*/
+        background-color: #00ECFF;
+        border-radius: 10px 10px 10px 10px;
+        /*margin: 10px ;*/
+        padding:5px;
+        
+    
+    }
+</style>
+<div id="pontos">
+    <script>
+        var pontos = 5;
+        var ficha;
+        ficha = document.forms["ficha"];
+        pontos = pontos - ficha.elements["forca"].value;
+        pontos = pontos - ficha.elements["habilidade"].value;
+        pontos = pontos - ficha.elements["resistencia"].value;
+        pontos = pontos - ficha.elements["armadura"].value;
+        pontos = pontos - ficha.elements["pdf"].value;
+        
+      
+        
+      // document.write("pontos de personagem: "+pontos);
+       
+    </script>
+</div>
+<br>
+<br>
+    <input type="button" value="salvar" onclick="criarFicha()"> </input>
+    
+</form>
+<!--<button> salvar</button>-->
+<br>
+<br>
+
+<a href="index.html">voltar</a>
+</body>
+</html>
