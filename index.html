@@ -583,7 +583,7 @@
         </script>
         
         
-        <div class="btnFichas">
+       <div class="btnFichas">
 
             
                 <a href="fichas.html">
@@ -593,13 +593,11 @@
                 
               
                 >
->
                 </a>
             
 
 
         </div>
-
       
 
         
@@ -635,13 +633,20 @@
             
             n=n+1;
             
-            alert(n);
+            //const dado = n;
+            
+            var opc = prompt("Resultado = " +n+" Quer mandar para o zap");
             
             
+
+            if(opc = true){
+                     
+                var numero = prompt('Digite o numero do zap:55(xx)+numero, Exemplo: 5585989410805 não use paraenteses( )');
+
+                 window.open("https://api.whatsapp.com/send?phone=" + numero + "&text= "+n);
+            }
+
             
-        }
-            
-       </script>
               
         
 
